@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            box-shadow:4px 4px 2px rgb(0, 162, 255);
+        
+        }
+
+        .t1 {
+            position: relative;
+            height: 35vh;
+            width: 50vw;
+            left: 100px;
+            top: 100px;
+        }
+
+        .t2 {
+            position: relative;
+            height: 40vh;
+            width: 50vw;
+            left: 100px;
+            top: 100px;
+        }
+
+        .t3 {
+            position: relative;
+            height: 70vh;
+            width: 50vw;
+            left: 100px;
+            top: 100px;
+        }
+
+        @media screen and (min-width:320px)and (max-width:425px) {
+
+            .t2,
+            .t3 {
+                background-color: brown;
+                display: none
+            }
+        }
+
+        @media screen and (min-width:426px) and (max-width:600px) {
+
+            .t1,
+            .t3 {
+                background-color: aquamarine;
+                display: none
+            }
+        }
+
+        @media screen and (min-width:769px) {
+
+            .t1,
+            .t2 {
+                background-color: blueviolet;
+                display: none
+            }
+        }
+
+        .hy {
+            background-image: linear-gradient(to top, red, green, blue, violet);
+        }
+
+        .ee {
+            background-image: radial-gradient(brown, aqua, orange);
+        }
+
+        .ja {
+            background-image: repeating-linear-gradient(orange, yellow, red, green);
+        }
+
+        .ma {
+            background-image: repeating-linear-gradient(rgb(224, 37, 199), green, blue, rgb(208, 230, 15), rgb(240, 100, 100));
+        }
+        h1{
+            text-shadow: 3px 3px 3px gray;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="t1">
+
+        <caption>
+            <h1>TABLE 1</h1>
+        </caption>
+        <tr>
+            <td class="hy"></td>
+            <td class="ee"></td>
+
+        </tr>
+        <tr>
+            <td class="ja"></td>
+            <td class="ja"></td>
+        </tr>
+    </table>
+    <table class="t2">
+        <caption>
+            <h1>TABLE 2</h1>
+        </caption>
+        <tr>
+            <td class="hy"></td>
+            <td style="background-color: rgb(255, 0, 200)"></td>
+            <td class="ja"></td>
+        </tr>
+        <tr>
+            <td class="ee"></td>
+            <td style="background-color: aqua"></td>
+            <td class="ee"></td>
+        </tr>
+        <tr>
+            <td class="ja"></td>
+            <td class="hy"></td>
+            <td style="background-color: bisque;"></td>
+        </tr>
+    </table>
+    <table class="t3">
+        <caption>
+            <h1>TABLE 3</h1>
+        </caption>
+        <tr>
+            <td style="background-color: rgb(135, 231, 90);"></td>
+            <td class="ja"></td>
+            <td class="ee"></td>
+            <td style="background-color: rgb(88, 88, 252)"></td>
+        </tr>
+        <tr>
+            <td class="ee"></td>
+            <td class="ma"></td>
+            <td style="background-color: rgb(236, 174, 58)"></td>
+            <td class="ja"></td>
+        </tr>
+        <tr>
+            <td class="ja"></td>
+            <td style="background-color: aqua"></td>
+            <td class="ee"></td>
+            <td class="ma"></td>
+        </tr>
+        <tr>
+            <td class="ee"></td>
+            <td class="ma"></td>
+            <td style="background-color: pink;"></td>
+            <td style="background-color: rgb(135, 231, 90);"></td>
+        </tr>
+    </table>
+    </div>
+</body>
+
+</html>
